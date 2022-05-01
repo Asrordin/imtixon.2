@@ -1,0 +1,39 @@
+.site-header__content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 54px;
+}
+.site-header__logo-img{
+    display: block;
+}
+@include breakpoint-down(460px){
+    .site-header{
+        position: relative;
+        z-index: 3;
+    }
+    .site-header--active
+    .site-nav{
+        display: block;
+    }
+    .site-header--active{
+
+    
+    .nav-toggler__line{
+        &:not(:last-child){
+            margin-bottom: 3px;
+        }
+        &:hover .nav-toggler__line--up {
+            transform: rotate(45deg) translate(2px, 2px) ; 
+        }
+        &:hover .nav-toggler--center{
+            display: none;
+        }
+        &:hover .nav-toggler__line--down{
+            transform: rotate(-45deg);
+        }
+    }
+    }
+}

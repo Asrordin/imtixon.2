@@ -1,0 +1,50 @@
+.form-section__content {
+    display: flex;
+    justify-content: space-between;
+}
+.form-section__desc {
+    font-size: 40px;
+}
+.form-section__form {
+    width: 635px;
+}
+.form-section__email {
+    position: relative;
+}
+.form-section__error-text {
+    display: none;
+    position: absolute;
+    color: rgb(255, 0, 0);
+    top: 25px;
+    left: 10px;
+}
+.form-section__email-error{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(209, 209, 209);
+    border: none;
+}
+.form-section__name {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(209, 209, 209);
+}
+.form-section__text {
+    width: 100%;
+    height: 96px;
+    padding: 9px;
+    border: none;
+    resize: none;
+    background-color: rgb(209, 209, 209);
+}
+.form-section__btn{
+    padding: 17px 32px;
+    margin: 0;
+    margin-top: 30px;
+    background-color: #33323D;
+    color: #fff;
+}
+.form-section__email-error:not(:focus):not(:placeholder-shown):invalid + .form-section__error-text{
+    display: block;
+}

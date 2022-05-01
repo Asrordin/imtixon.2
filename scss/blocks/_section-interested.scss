@@ -1,0 +1,40 @@
+.section-interested{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.section-interested__heading{
+    max-width: 350px;
+    font-family: $font-stack;    
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+}
+.section-interested__item{
+    background-color: $color-grayish;
+    opacity: 0.15;
+    height: 2px;
+    width: 534px;
+}
+.section-interested__link{
+    display: block;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-grayish;
+    padding: 17px 32px;
+    border: 1px solid $color-grayish;
+}
+@include breakpoint-down (550px){
+    .section-interested{
+        display: block;
+    }
+    .section-interested__heading{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .section-interested__link{
+
+    }
+}

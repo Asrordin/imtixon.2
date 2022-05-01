@@ -18,10 +18,15 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
+  font-family: "Public Sans", sans-serif;
+  background-color: $color-very-light;  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 }
-
+main{
+  flex-grow: 1;
+}
 img {
   max-width: 100%;
   height: auto;

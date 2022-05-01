@@ -1,0 +1,80 @@
+.section-desc{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 116px;
+}
+.section-desc__item{
+    width: 100%;
+    max-width: 445px;
+    position: absolute;
+    z-index: 1;
+    background-color:$color-very-light ;
+    margin: 0;
+    left: 20px;
+    bottom: 0;
+    padding-top: 56px;
+    padding-right: 55px;
+    padding-bottom: 53px;
+}
+.section-desc__text{
+    font-family: $font-stack;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+    margin-bottom: 32px;
+    color: $color-grayish;
+}
+.section-desc__link{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 150px;
+    padding: 17px 15px;
+    text-decoration: none;
+    background-color: $color-dark-blue;
+    color: $color-very-light;
+}
+@include breakpoint-down (768px){
+    .section-desc__item{
+        width: 100%;
+        display: block;
+
+    }
+    .section-desc__text{
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0;
+        color: $color-grayish;
+    }
+}
+@include breakpoint-down (600px){
+    .section-desc__item{
+        width: 100%;
+
+    }
+    .section-desc__text{
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        margin: 0;
+        color: $color-grayish;
+    }
+}
+@include breakpoint-down (540px){
+    .section-desc__item{
+        position: static;
+
+    }
+    .section-desc__text{
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        margin: 0;
+        color: $color-grayish;
+    }
+}
